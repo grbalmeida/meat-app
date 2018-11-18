@@ -272,3 +272,8 @@ body {
 .search-link:hover {
   color: #dd4b39;
 }
+
+.search-bar {
+  opacity: 0;
+  max-height: 0px;
+}
