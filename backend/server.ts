@@ -1,7 +1,5 @@
 import * as jsonServer from 'json-server'
-import {Express} from 'express'
-import * as fs from 'fs'
-import * as https from 'https'
+import * as http from 'http'
 import {handleAuthentication} from './auth'
 import {handleAuthorization} from './authz'
 
@@ -23,12 +21,7 @@ server.post('/login', handleAuthentication)
 server.use('/orders', handleAuthorization)
 server.use(router)
 
-const options = {
-  cert: fs.readFileSync('./backend/keys/cert.pem'),
-  key: fs.readFileSync('./backend/keys/key.pem')
-}
-
-https.createServer(options, server)
+http.createServer(server)
   .listen(3001, () => {
   console.log('JSON Server is running')
 })
