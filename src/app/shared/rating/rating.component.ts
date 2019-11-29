@@ -9,7 +9,7 @@ export class RatingComponent implements OnInit {
   @Output() rated = new EventEmitter<number>()
 
   rates: number[] = [1, 2, 3, 4, 5]
-  rate: number = 0
+  rate = 0
   previousRate: number
 
   constructor() { }
@@ -24,14 +24,14 @@ export class RatingComponent implements OnInit {
   }
 
   setTemporaryRate(r: number) {
-    if(this.previousRate === undefined) {
+    if (this.previousRate === undefined) {
       this.previousRate = this.rate
     }
     this.rate = r
   }
 
   clearTemporaryRate() {
-    if(this.previousRate !== undefined) {
+    if (this.previousRate !== undefined) {
       this.rate = this.previousRate
       this.previousRate = undefined
     }

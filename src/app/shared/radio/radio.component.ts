@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, forwardRef } from '@angular/core';
-import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/forms'
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms'
 import { RadioOption } from './radio-option.model'
 
 @Component({
@@ -35,6 +35,6 @@ export class RadioComponent implements OnInit, ControlValueAccessor {
     this.onChange = fn
   }
 
-  registerOnTouched(fn: any): void {}
-  setDisabledState(isDisabled: boolean): void {}
+  registerOnTouched(fn: any): void { }
+  setDisabledState(isDisabled: boolean): void { }
 }

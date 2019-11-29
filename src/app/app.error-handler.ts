@@ -1,8 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http'
 import { ErrorHandler, Injectable, Injector } from '@angular/core'
 
-import {NotificationService} from './shared/messages/notification.service'
-import {LoginService} from './security/login/login.service'
+import { NotificationService } from './shared/messages/notification.service'
+import { LoginService } from './security/login/login.service'
 
 @Injectable()
 export class ApplicationErrorHandler extends ErrorHandler {
