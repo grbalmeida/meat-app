@@ -1,7 +1,7 @@
 import * as jsonServer from 'json-server'
 import * as http from 'http'
-import {handleAuthentication} from './auth'
-import {handleAuthorization} from './authz'
+import { handleAuthentication } from './auth'
+import { handleAuthorization } from './authz'
 
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
@@ -23,5 +23,5 @@ server.use(router)
 
 http.createServer(server)
   .listen(3001, () => {
-  console.log('JSON Server is running')
-})
+    console.log('JSON Server is running')
+  })

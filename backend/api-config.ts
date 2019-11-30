@@ -1,3 +1,3 @@
 export const apiConfig = {
-    secreat: 'meat-api-password'   
+  secreat: 'meat-api-password'
 }
