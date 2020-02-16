@@ -370,5 +370,23 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "name": "Juliana",
+      "email": "ju@g.com",
+      "emailConfirmation": "ju@g.com",
+      "address": "Rua da Ju",
+      "number": "2000",
+      "optionalAddress": "Complemento da Ju",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "cup-cake"
+        }
+      ],
+      "createdAt": 1581825011918,
+      "id": 1
+    }
+  ]
 }
